@@ -6,16 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 img {
     display: block;
     margin: 0 auto;
     float: none;
-    padding-top: 10em;
-    padding-bottom: 2em;
-    margin-left: 20em;
+    padding-top: 15em;
+    padding-bottom: 3em;
+    margin-left: 40em;
 }
 
 a {
@@ -25,19 +25,29 @@ a {
 
 form {
     border: none;
+    border-radius: 20em;
+}
+
+button {
+    border: none;
+    background-color: #eee;
+    padding: 0.5em;
     border-radius: 5px;
+    margin: 0 .7em;
 }
 
 nav {
-    width: 100%
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
 }
 
 nav ul li {
-    height: 3em;
+    height: 4em;
     width: 7em;
     float: left;
     list-style-type: none;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 li a {
@@ -52,30 +62,75 @@ a:link, a:visited {
     color: #333
 }
 
-input#search {
-    width: 30em;
+form input#search {
+    width: 35em;
     height: 3em;
     display: block;
     margin: 0 auto;
+    background: #eee;
+    border: 1px solid #aaa;
+    border: none;
+    border-radius: 10em;
 }
 
-
-
-
-
-button {
-    left: 50%;
+li.right {
+    float: right;
 }
 
-button #sign-in{
-    left: 95%;
+li button.right {
+    float: right;
 }
 
-.footer {
+nav.footer {
+    background-color: #eee;
+    bottom: 0;
+    margin-top: 20em;
+    border-top: solid 1px #ccc;
+}
+
+nav ul li.bottom-nav {
     display: block;
-    background-color: #DDDDDD;
     margin: 0 auto;
-    width: 100%
+    float: left;
+    width: 10em;
+    height: 4em;
+    line-height: 2.5em;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 1em;
 }
+
+li.right.bottom-nav {
+    float: right;
+}
+
+
+
+div.search-buttons {
+    display: block;
+    margin: 0 auto;
+    float: left;
+}
+
+button#google-search {
+    margin-left: 35em;
+}
+
+li.right#sign-in{
+    float: right !important;
+    border-radius: 3px;
+    background-color: #0099dd;
+    color: white;
+    width: 5em;
+    height: 2em;
+    padding: 0.25em;
+    margin: 15px 2em 0 2em;
+}
+
+li a#sign-in2 {
+    color: #fff;
+    font-weight: bold;
+}
+
 
 
